@@ -1,0 +1,5 @@
+kind: ConfigMap
+metadata:
+  name: bai
+data:
+  foobar: barfoo

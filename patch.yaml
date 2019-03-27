@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: the-container
+        env:
+        - name: hi
+          valueFrom:
+            configMapKeyRef:
+              name: bai
+              key: foobar

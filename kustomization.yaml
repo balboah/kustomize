@@ -1,0 +1,7 @@
+namePrefix: foo-
+bases:
+- github.com/kubernetes-sigs/kustomize/examples/helloWorld
+patches:
+- patch.yaml
+resources:
+- cm.yaml
